@@ -1169,7 +1169,7 @@ private List<Intent> addIntentsToList(Context context, List<Intent> list, Intent
         }else{
             intent = new Intent();
             intent.setData(mCameraFileUri);
-            LOG.d(LOG_TAG, "Bundle intent:  -- -"+intent.toString()+" Action "+intent.getAction()+" DataString "+intent.getDataString()+"URI "+mCameraFileUri.toString());
+            // LOG.d(LOG_TAG, "Bundle intent:  -- -"+intent.toString()+" Action "+intent.getAction()+" DataString "+intent.getDataString()+"URI "+mCameraFileUri.toString());
         }
         mUploadCallback.onReceiveValue(WebChromeClient.FileChooserParams.parseResult(resultCode, intent));
         mUploadCallback = null;
