@@ -933,7 +933,7 @@ public class InAppBrowser extends CordovaPlugin {
                         // Create File Chooser Intent
                         Intent content = new Intent(Intent.ACTION_GET_CONTENT);
                         content.addCategory(Intent.CATEGORY_OPENABLE);
-                        content.setType("image/*");
+                        content.setType("*/*");
 
                         String acceptedTypes = String.join(",", fileChooserParams.getAcceptTypes());
 
